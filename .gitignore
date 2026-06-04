@@ -8,7 +8,7 @@
 !kitty/
 !kitty/**
 !mpd/
-!mpd/**
+!mpd/mpd.conf
 !niri/
 !niri/**
 !noctalia/
