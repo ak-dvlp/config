@@ -1,0 +1,37 @@
+# Font configuration.
+# Sets the font. $ paru -S ttf-fira-code
+font_family Fira Code
+# Sets the font size.
+font_size 16.0
+# Automatically use bold variants.
+bold_font auto
+# Automatically use italic variants.
+italic_font auto
+# Automatically use bold italic variants.
+bold_italic_font auto
+# Disable ligatures on cursor over for easier edits.
+disable_ligatures cursor
+
+# Window configuration.
+# Sets the initial height to 30 columns.
+initial_window_height 30c
+# Sets the initial width to 100 columns.
+initial_window_width 100c
+# Do not remember the window position.
+remember_window_position no
+# Do not remember the  window size.
+remember_window_size no
+
+window_padding_width 8
+
+# Notification configuration.
+# Disables the annoying terminal beep.
+enable_audio_bell no
+# Send a notification when unfocused.
+notify_on_cmd_finish unfocused 10.0 command notify-send "job finished with status: %s" %c
+
+# Shell configuration.
+# Number of lines to keep in history.
+scrollback_lines 2000
+# Enables shell integration.
+shell_integration enabled
