@@ -7,6 +7,8 @@
 !flameshot/**
 !kitty/
 !kitty/**
+!mpd/
+!mpd/**
 !niri/
 !niri/**
 !noctalia/

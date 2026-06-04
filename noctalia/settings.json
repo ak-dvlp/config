@@ -20,7 +20,8 @@
         "pinnedApps": [
             "appimagekit_47d89a96a890c71d09c38f6cda8e71ff-YouGile",
             "yandex-browser",
-            "code"
+            "code",
+            "org.gnome.Nautilus"
         ],
         "position": "center",
         "screenshotAnnotationTool": "",
@@ -40,7 +41,7 @@
         "volumeFeedback": false,
         "volumeFeedbackSoundFile": "",
         "volumeOverdrive": false,
-        "volumeStep": 5
+        "volumeStep": 1
     },
     "bar": {
         "autoHideDelay": 500,
@@ -160,7 +161,7 @@
                             "displayMode": "onhover",
                             "iconColor": "none",
                             "id": "Volume",
-                            "middleClickCommand": "pwvucontrol || pavucontrol",
+                            "middleClickCommand": "wpctl",
                             "textColor": "none"
                         },
                         {
@@ -235,7 +236,7 @@
                             "showAlbumArt": true,
                             "showArtistFirst": true,
                             "showProgressRing": true,
-                            "showVisualizer": true,
+                            "showVisualizer": false,
                             "textColor": "primary",
                             "useFixedWidth": false,
                             "visualizerType": "linear"
