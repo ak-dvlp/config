@@ -17,3 +17,5 @@
 !noctalia/settings.json
 !yazi/
 !yazi/**
+!rmpc/
+!rmpc/**
