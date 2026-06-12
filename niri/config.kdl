@@ -1,46 +1,16 @@
-// This config is in the KDL format: https://kdl.dev
-// "/-" comments out the following node.
-// Check the wiki for a full description of the configuration:
-// https://niri-wm.github.io/niri/Configuration:-Introduction
-
-// Input device configuration.
-// Find the full list of options on the wiki:
-// https://niri-wm.github.io/niri/Configuration:-Input
 input {
     keyboard {
         xkb {
-            // You can set rules, model, layout, variant and options.
-            // For more information, see xkeyboard-config(7).
-
-            // For example:
             layout "us,ru"
-            // options "grp:win_space_toggle,compose:ralt,ctrl:nocaps"
-	    options "grp:alt_shift_toggle,caps:swapescape"
-
-            // If this section is empty, niri will fetch xkb settings
-            // from org.freedesktop.locale1. You can control these using
-            // localectl set-x11-keymap.
+	        options "grp:alt_shift_toggle,caps:swapescape"
         }
-
-        // Enable numlock on startup, omitting this setting disables it.
         numlock
     }
 
-    // Next sections include libinput settings.
-    // Omitting settings disables them, or leaves them at their default values.
-    // All commented-out settings here are examples, not defaults.
     touchpad {
         // off
         tap
-        // dwt
-        // dwtp
-        // drag false
-        // drag-lock
         natural-scroll
-        // accel-speed 0.2
-        // accel-profile "flat"
-        // scroll-method "two-finger"
-        // disabled-on-external-mouse
     }
 
     mouse {
@@ -51,17 +21,6 @@ input {
         // scroll-method "no-scroll"
     }
 
-    trackpoint {
-        // off
-        // natural-scroll
-        // accel-speed 0.2
-        // accel-profile "flat"
-        // scroll-method "on-button-down"
-        // scroll-button 273
-        // scroll-button-lock
-        // middle-emulation
-    }
-
     // Uncomment this to make the mouse warp to the center of newly focused windows.
     // warp-mouse-to-focus
 
@@ -70,12 +29,6 @@ input {
     // focus-follows-mouse max-scroll-amount="0%"
 }
 
-// You can configure outputs by their name, which you can find
-// by running `niri msg outputs` while inside a niri instance.
-// The built-in laptop monitor is usually called "eDP-1".
-// Find more information on the wiki:
-// https://niri-wm.github.io/niri/Configuration:-Outputs
-// Remember to uncomment the node by removing "/-"!
 output "DP-1" {
     mode "1920x1080@60.000"
     scale 1
@@ -84,38 +37,23 @@ output "DP-1" {
 }
 
 output "HDMI-A-1" {
-    mode "2560x1440@74.599"
+    // mode "2560x1440@74.599"
+    mode "2560x1440@74"
     scale 1
     transform "normal"
     position x=1920 y=0
 }
 
-// Settings that influence how windows are positioned and sized.
-// Find more information on the wiki:
-// https://niri-wm.github.io/niri/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
     gaps 10
 
-    // When to center a column when changing focus, options are:
-    // - "never", default behavior, focusing an off-screen column will keep at the left
-    //   or right edge of the screen.
-    // - "always", the focused column will always be centered.
-    // - "on-overflow", focusing a column will center it if it doesn't fit
-    //   together with the previously focused column.
     center-focused-column "never"
 
-    // You can customize the widths that "switch-preset-column-width" (Mod+R) toggles between.
     preset-column-widths {
-        // Proportion sets the width as a fraction of the output width, taking gaps into account.
-        // For example, you can perfectly fit four windows sized "proportion 0.25" on an output.
-        // The default preset widths are 1/3, 1/2 and 2/3 of the output.
         proportion 0.33333
         proportion 0.5
         proportion 0.66667
-
-        // Fixed sets the width in logical pixels exactly.
-        // fixed 1920
     }
 
     // You can also customize the heights that "switch-preset-window-height" (Mod+Ctrl+Shift+R) toggles between.
@@ -330,9 +268,13 @@ window-rule {
     open-maximized true
 }
 
-
 window-rule {
     match app-id="org.gnome.Nautilus"
+    open-floating true
+}
+
+window-rule {
+    match app-id="org.gnome.Loupe"
     open-floating true
 }
 
