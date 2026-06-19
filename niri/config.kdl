@@ -278,6 +278,11 @@ window-rule {
     open-floating true
 }
 
+window-rule {
+    match app-id="OxiCalc"
+    open-floating true
+}
+
 // Example: block out two password managers from screen capture.
 // (This example rule is commented out with a "/-" in front.)
 /-window-rule {
@@ -334,6 +339,7 @@ binds {
     XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05-"; }
     XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
     XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
+    XF86Calculator       allow-when-locked=true { spawn-sh "/home/aleks/Packages/OxiCalc/target/release/oxicalc"; }
 
     // Example media keys mapping using playerctl.
     // This will work with any MPRIS-enabled media player.
