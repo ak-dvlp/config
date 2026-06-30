@@ -261,11 +261,25 @@ window-rule {
 window-rule {
     match app-id="Yandex-browser"
     open-maximized true
+    open-maximized-to-edges true
+}
+
+window-rule {
+    match app-id="google-chrome-unstable"
+    open-maximized true
+    open-maximized-to-edges true
+}
+
+window-rule {
+    match app-id="chrome-_text_html,-Default"
+    open-maximized true
+    open-maximized-to-edges true
 }
 
 window-rule {
     match app-id="code"
     open-maximized true
+    open-maximized-to-edges true
 }
 
 window-rule {

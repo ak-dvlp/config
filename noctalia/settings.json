@@ -21,7 +21,8 @@
             "appimagekit_47d89a96a890c71d09c38f6cda8e71ff-YouGile",
             "yandex-browser",
             "code",
-            "org.gnome.Nautilus"
+            "org.gnome.Nautilus",
+            "google-chrome-unstable"
         ],
         "position": "center",
         "screenshotAnnotationTool": "",
@@ -50,7 +51,7 @@
         "barType": "simple",
         "capsuleColorKey": "none",
         "capsuleOpacity": 1,
-        "contentPadding": 1,
+        "contentPadding": 0,
         "density": "comfortable",
         "displayMode": "always_visible",
         "enableExclusionZoneInset": true,
@@ -83,6 +84,13 @@
                 "widgets": {
                     "center": [
                         {
+                            "displayMode": "onhover",
+                            "iconColor": "none",
+                            "id": "KeyboardLayout",
+                            "showIcon": false,
+                            "textColor": "none"
+                        },
+                        {
                             "characterCount": 2,
                             "colorizeIcons": false,
                             "emptyColor": "none",
@@ -92,16 +100,24 @@
                             "fontWeight": "bold",
                             "groupedBorderOpacity": 1,
                             "hideUnoccupied": true,
-                            "iconScale": 0.8,
+                            "iconScale": 0.7,
                             "id": "Workspace",
                             "labelMode": "none",
                             "occupiedColor": "none",
                             "pillSize": 0.6,
                             "showApplications": true,
-                            "showApplicationsHover": true,
+                            "showApplicationsHover": false,
                             "showBadge": true,
                             "showLabelsOnlyWhenOccupied": true,
-                            "unfocusedIconsOpacity": 1
+                            "unfocusedIconsOpacity": 0.5
+                        },
+                        {
+                            "hideWhenZero": true,
+                            "hideWhenZeroUnread": false,
+                            "iconColor": "none",
+                            "id": "NotificationHistory",
+                            "showUnreadBadge": true,
+                            "unreadBadgeColor": "none"
                         }
                     ],
                     "left": [
@@ -165,13 +181,6 @@
                             "textColor": "none"
                         },
                         {
-                            "displayMode": "forceOpen",
-                            "iconColor": "none",
-                            "id": "KeyboardLayout",
-                            "showIcon": true,
-                            "textColor": "none"
-                        },
-                        {
                             "clockColor": "none",
                             "customFont": "Fira Code",
                             "formatHorizontal": "d MMMM, dddd, HH:mm",
@@ -179,14 +188,6 @@
                             "id": "Clock",
                             "tooltipFormat": "HH:mm ddd, MMM dd",
                             "useCustomFont": false
-                        },
-                        {
-                            "hideWhenZero": false,
-                            "hideWhenZeroUnread": false,
-                            "iconColor": "none",
-                            "id": "NotificationHistory",
-                            "showUnreadBadge": true,
-                            "unreadBadgeColor": "none"
                         },
                         {
                             "iconColor": "none",
@@ -203,6 +204,13 @@
                 "widgets": {
                     "center": [
                         {
+                            "displayMode": "onhover",
+                            "iconColor": "none",
+                            "id": "KeyboardLayout",
+                            "showIcon": false,
+                            "textColor": "none"
+                        },
+                        {
                             "characterCount": 2,
                             "colorizeIcons": false,
                             "emptyColor": "none",
@@ -212,16 +220,24 @@
                             "fontWeight": "bold",
                             "groupedBorderOpacity": 1,
                             "hideUnoccupied": true,
-                            "iconScale": 0.8,
+                            "iconScale": 0.7,
                             "id": "Workspace",
                             "labelMode": "none",
                             "occupiedColor": "none",
                             "pillSize": 0.6,
                             "showApplications": true,
-                            "showApplicationsHover": true,
+                            "showApplicationsHover": false,
                             "showBadge": true,
                             "showLabelsOnlyWhenOccupied": true,
-                            "unfocusedIconsOpacity": 1
+                            "unfocusedIconsOpacity": 0.5
+                        },
+                        {
+                            "hideWhenZero": true,
+                            "hideWhenZeroUnread": false,
+                            "iconColor": "none",
+                            "id": "NotificationHistory",
+                            "showUnreadBadge": true,
+                            "unreadBadgeColor": "primary"
                         }
                     ],
                     "left": [
@@ -264,7 +280,7 @@
         "showOnWorkspaceSwitch": true,
         "showOutline": false,
         "useSeparateOpacity": false,
-        "widgetSpacing": 8,
+        "widgetSpacing": 2,
         "widgets": {
             "center": [
                 {
