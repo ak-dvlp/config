@@ -206,16 +206,16 @@
                 panes: [(pane: Pane(Directories), size: "100%", borders: "ALL", border_symbols: Rounded)],
             )
         ),
-        (
-            name: "Группы",
-            borders: "ALL",
-            border_symbols: Rounded,
-            pane: Split(
-                size: "100%",
-                direction: Vertical,
-                panes: [(pane: Pane(Artists), size: "100%", borders: "ALL", border_symbols: Rounded)],
-            )
-        ),
+//        (
+//            name: "Группы",
+//            borders: "ALL",
+//            border_symbols: Rounded,
+//            pane: Split(
+//                size: "100%",
+//                direction: Vertical,
+//                panes: [(pane: Pane(Artists), size: "100%", borders: "ALL", border_symbols: Rounded)],
+//            )
+//        ),
 //      (
 //          name: "Album Artists",
 //	    borders: "ALL",

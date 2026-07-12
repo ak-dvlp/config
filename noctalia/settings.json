@@ -18,11 +18,12 @@
         "ignoreMouseInput": false,
         "overviewLayer": false,
         "pinnedApps": [
-            "appimagekit_47d89a96a890c71d09c38f6cda8e71ff-YouGile",
             "yandex-browser",
             "code",
             "org.gnome.Nautilus",
-            "google-chrome-unstable"
+            "discord",
+            "appimagekit_47d89a96a890c71d09c38f6cda8e71ff-YouGile",
+            "rmpc"
         ],
         "position": "center",
         "screenshotAnnotationTool": "",
@@ -260,6 +261,59 @@
                     ],
                     "right": [
                         {
+                            "defaultSettings": {
+                                "autoHeight": true,
+                                "bindOverrides": {
+                                },
+                                "cheatsheetData": [
+                                ],
+                                "columnCount": 3,
+                                "descriptionTextColor": "",
+                                "detectedCompositor": "",
+                                "hyprlandConfigPath": "~/.config/hypr/hyprland.conf",
+                                "hyprlandLuaConfigPath": "~/.config/hypr/hyprland.lua",
+                                "hyprlandParserMode": "auto",
+                                "keyColorAlt": "#FF6B6B",
+                                "keyColorCtrl": "",
+                                "keyColorDefault": "#6C757D",
+                                "keyColorMod2": "",
+                                "keyColorMod3": "",
+                                "keyColorMod5": "",
+                                "keyColorMouse": "#F38181",
+                                "keyColorNumeric": "#A8DADC",
+                                "keyColorPrint": "#95E1D3",
+                                "keyColorShift": "",
+                                "keyColorSuper": "",
+                                "keyColorXF86": "#4ECDC4",
+                                "keyLabelColor": "#FFFFFF",
+                                "keyLabelMod2": "",
+                                "keyLabelMod3": "",
+                                "keyLabelMod5": "",
+                                "keyTextAlt": "",
+                                "keyTextCtrl": "",
+                                "keyTextDefault": "",
+                                "keyTextMod2": "",
+                                "keyTextMod3": "",
+                                "keyTextMod5": "",
+                                "keyTextMouse": "",
+                                "keyTextNumeric": "",
+                                "keyTextPrint": "",
+                                "keyTextShift": "",
+                                "keyTextSuper": "",
+                                "keyTextXF86": "",
+                                "mangoConfigPath": "~/.config/mango/config.conf",
+                                "mergeSequentialBinds": true,
+                                "modKeyVariable": "$mod",
+                                "niriConfigPath": "~/.config/niri/config.kdl",
+                                "showUndescribedBinds": true,
+                                "splitLargeWorkspaceCategory": true,
+                                "windowHeight": 850,
+                                "windowWidth": 1400,
+                                "workspaceSplitThreshold": 12
+                            },
+                            "id": "plugin:keybind-cheatsheet"
+                        },
+                        {
                             "colorizeSystemIcon": "none",
                             "colorizeSystemText": "none",
                             "customIconPath": "",
@@ -268,9 +322,6 @@
                             "iconColor": "none",
                             "id": "Launcher",
                             "useDistroLogo": false
-                        },
-                        {
-                            "id": "plugin:keybind-cheatsheet"
                         }
                     ]
                 }
@@ -427,50 +478,6 @@
                     "id": "Clock",
                     "tooltipFormat": "HH:mm ddd, MMM dd",
                     "useCustomFont": false
-                },
-                {
-                    "defaultSettings": {
-                        "autoHeight": true,
-                        "bindOverrides": {
-                        },
-                        "cheatsheetData": [
-                        ],
-                        "columnCount": 3,
-                        "descriptionTextColor": "",
-                        "detectedCompositor": "",
-                        "hyprlandConfigPath": "~/.config/hypr/hyprland.conf",
-                        "hyprlandLuaConfigPath": "~/.config/hypr/hyprland.lua",
-                        "hyprlandParserMode": "auto",
-                        "keyColorAlt": "#FF6B6B",
-                        "keyColorCtrl": "",
-                        "keyColorDefault": "#6C757D",
-                        "keyColorMouse": "#F38181",
-                        "keyColorNumeric": "#A8DADC",
-                        "keyColorPrint": "#95E1D3",
-                        "keyColorShift": "",
-                        "keyColorSuper": "",
-                        "keyColorXF86": "#4ECDC4",
-                        "keyLabelColor": "#FFFFFF",
-                        "keyTextAlt": "",
-                        "keyTextCtrl": "",
-                        "keyTextDefault": "",
-                        "keyTextMouse": "",
-                        "keyTextNumeric": "",
-                        "keyTextPrint": "",
-                        "keyTextShift": "",
-                        "keyTextSuper": "",
-                        "keyTextXF86": "",
-                        "mangoConfigPath": "~/.config/mango/config.conf",
-                        "mergeSequentialBinds": true,
-                        "modKeyVariable": "$mod",
-                        "niriConfigPath": "~/.config/niri/config.kdl",
-                        "showUndescribedBinds": true,
-                        "splitLargeWorkspaceCategory": true,
-                        "windowHeight": 850,
-                        "windowWidth": 1400,
-                        "workspaceSplitThreshold": 12
-                    },
-                    "id": "plugin:keybind-cheatsheet"
                 }
             ]
         }
@@ -941,7 +948,7 @@
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",
         "wallhavenPurity": "100",
-        "wallhavenQuery": "ocean",
+        "wallhavenQuery": "forest river",
         "wallhavenRatios": "",
         "wallhavenResolutionHeight": "",
         "wallhavenResolutionMode": "atleast",
